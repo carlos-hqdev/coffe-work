@@ -1,0 +1,422 @@
+/* Configurações globais */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+	background-color: rgb(112, 67, 55);
+	color: white;
+}
+
+/* Header - Logo e navegação */
+/* Header - Logo e navegação */
+/* Header - Logo e navegação */
+/* Header - Logo e navegação */
+/* Header - Logo e navegação */
+/* Header - Logo e navegação */
+/* Header - Logo e navegação */
+/* Header - Logo e navegação */
+header {
+	display: flex;
+	justify-content: space-between; /* Mantém a logo e a navegação nas extremidades */
+	align-items: center; /* Centraliza verticalmente a logo e os links */
+	padding: 5px 20px; /* Reduz o padding para diminuir a altura */
+	background-color: #3e2723; /* Cor de fundo do cabeçalho */
+	height: 130px; /* Mantém uma altura razoável para logo grande */
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+header nav a {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+#logo img {
+	width: 250px; /* Mantém o tamanho maior da logo */
+	height: auto; /* Mantém a proporção da logo */
+	margin-left: 10px; /* Diminui o espaço à esquerda da logo */
+	transform: translateY(-10px); /* Move a logo 10px para cima */
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 20px; /* Reduz o espaço entre os itens da lista */
+	padding: 0;
+	margin: 0;
+	align-items: center; /* Centraliza verticalmente os itens da navegação */
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 20px; /* Mantém o tamanho da fonte legível */
+	padding: 8px; /* Diminui o padding dos links */
+}
+
+nav ul li a:hover {
+	color: rgb(167, 137, 96); /* Cor ao passar o mouse */
+	transition: color 0.3s; /* Transição suave */
+}
+
+/* Seção de landing com imagem de fundo e texto no topo */
+/* Seção de landing com imagem de fundo e texto no topo */
+#inicio {
+	position: relative;
+	width: 100%;
+	height: 90vh; /* O banner agora ocupa 80% da altura da tela */
+	background-image: url("./estilo/imagens/banner-cima.png"); /* Adapte o caminho da imagem */
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center; /* Alinha o conteúdo ao topo */
+	justify-content: center; /* Alinha o texto à esquerda */
+	align-content: center;
+}
+
+.overlay {
+	/*position: absolute;
+	/*top: 15%; /* Alinhamento mais ao topo */
+	/*left: 10%; /* Margem esquerda */
+	width: 80%; /* Largura do texto ajustada para caber melhor */
+	color: white;
+	text-align: left; /* Texto alinhado à esquerda */
+}
+
+.overlay h2 {
+	font-size: 56px; /* Aumentei o tamanho da fonte */
+	margin: 5px 0;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para o texto ficar mais visível */
+}
+
+.overlay p {
+	font-size: 22px; /* Aumentei o tamanho da fonte do parágrafo */
+	line-height: 1.6;
+	margin-top: 20px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Sombra leve no parágrafo */
+	max-width: 600px; /* Limitar a largura do texto */
+}
+
+.overlay span {
+	color: #e1a05a;
+}
+
+section {
+	padding-block: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	border: 0;
+	min-height: 90vh;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+section > h1 {
+	text-transform: capitalize;
+}
+
+/* Seção de curiosidades */
+#curiosidades {
+	/*  */
+}
+
+#curiosidades h1 {
+	text-align: center;
+	margin-top: 10px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+#curiosidades .card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; /* Centraliza os cards na horizontal */
+	align-items: flex-start; /* Alinha os cards no topo */
+	gap: 20px; /* Espaço entre os cards */
+	max-width: 1200px; /* Largura máxima do container */
+	margin-block: 20px;
+}
+
+#curiosidades .card-container .card {
+	width: 300px; /* Largura fixa dos cards */
+	text-align: center; /* Centraliza o texto dentro do card */
+	background-color: #f5f5f5; /* Cor de fundo do card */
+	border-radius: 8px; /* Bordas arredondadas */
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra do card */
+}
+
+#curiosidades .card-container .card .card-banner {
+	width: 100%;
+	max-height: 150px;
+	border-radius: 8px 8px 0 0;
+}
+
+#curiosidades .card-container .card .card-banner img {
+	width: 100%;
+	max-height: 150px;
+	object-fit: cover;
+	border-radius: 8px 8px 0 0;
+}
+
+#curiosidades .card-container .card details {
+	background-color: #f5f5f5;
+	font-size: 16px;
+	border-radius: 0 0 8px 8px;
+}
+
+#curiosidades .card-container .card summary {
+	font-size: 18px;
+	font-weight: bold;
+	color: #3e2723;
+	cursor: pointer;
+	padding: 15px;
+}
+
+#curiosidades .card-container .card p {
+	text-align: justify;
+	font-size: 14px;
+	color: #333;
+	line-height: 1.5;
+	padding: 15px;
+}
+
+/* Seção das Maquinas */
+#maquinas .card-container {
+	display: grid;
+	align-items: center;
+	/* justify-items: center; */
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+	gap: 20px;
+	max-width: 1200px;
+	width: 100%;
+	margin-block: 20px;
+}
+
+#maquinas .card {
+	position: relative;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s, box-shadow 0.3s;
+	cursor: pointer;
+	user-select: none;
+}
+
+#maquinas .card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#maquinas .card img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+
+#maquinas .card-content {
+	padding: 10px;
+}
+
+#maquinas .card-content h3 {
+	margin: 0;
+	font-size: 1rem;
+	color: #333;
+}
+
+#maquinas .card-content p {
+	color: #666;
+	font-size: 0.9em;
+	margin: 10px 0;
+}
+
+#maquinas .card-details {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.95);
+	color: #333;
+	padding: 20px;
+	box-sizing: border-box;
+	display: none;
+	overflow-y: auto;
+	/* border-radius: 8px; */
+	z-index: 10;
+}
+#maquinas .card-details > p {
+	padding-top: 15px;
+}
+#maquinas .card-details p {
+	text-align: justify;
+}
+
+#maquinas .card-details ul {
+	text-align: left;
+	padding-left: 20px;
+	margin: 0;
+}
+
+#maquinas .card.active .card-details {
+	display: block;
+}
+
+#maquinas .close-btn {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	background: none;
+	border: none;
+	font-size: 1.2em;
+	cursor: pointer;
+	color: #888;
+}
+
+#maquinas .close-btn:hover {
+	color: rgba(255, 10, 10, 0.7);
+}
+
+#receitas .card-container {
+	margin-block: 20px;
+}
+
+/*  */
+/*  */
+/* Estilo específico para a seção de cafeterias */
+section#cafeterias {
+	display: flex; /* Define layout flexível para o conteúdo */
+	flex-direction: row;
+	align-items: flex-start; /* Alinha conteúdo ao topo */
+	gap: 20px; /* Espaçamento entre as colunas */
+	padding: 20px;
+	margin: 30px auto;
+	min-height: auto;
+	max-width: 1200px; /* Largura total da seção */
+	color: #fff8f8;
+	border-radius: 8px;
+	background-color: #3e2723;
+}
+
+section#cafeterias iframe {
+	flex: 1;
+	border-radius: 8px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	max-width: 100%; /* Garante que o mapa não ultrapasse o espaço disponível */
+	height: 450px; /* Altura fixa para o mapa */
+}
+
+section#cafeterias .box {
+	flex: 1;
+}
+
+section#cafeterias .box h1 {
+	font-size: 28px; /* Aumente o valor conforme desejado */
+	/*margin-bottom: 10px; /* Adiciona espaço entre o h1 e o p */
+	color: #e1a05a; /* Adiciona cor ao título, se desejar */
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+section#cafeterias .box h3 {
+	margin-top: 20px;
+}
+
+section#cafeterias .box p {
+	font-size: 16px; /* Ajuste o tamanho do texto do parágrafo */
+	line-height: 1.6; /* Define a altura das linhas para uma melhor leitura */
+	text-align: justify;
+}
+
+section#cafeterias .box ul {
+	margin-left: 10px;
+	padding: 10px;
+	text-align: left;
+}
+
+section#cafeterias .box ul li {
+	margin-bottom: 10px;
+}
+
+.inframe:hover {
+	transform: scale(1.1);
+	opacity: 1;
+}
+
+footer {
+	background-color: #3e2723;
+	color: #e1a05a;
+	padding: 30px 20px;
+	font-family: "Roboto", sans-serif;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.footer-section {
+	flex: 1;
+	margin: 10px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+	font-size: 18px;
+	color: #fff8f8;
+}
+
+.footer-section p,
+.footer-section ul {
+	font-size: 14px;
+	color: #f5f5f5;
+}
+
+.footer-section ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.footer-section ul li {
+	margin: 5px 0;
+}
+
+.footer-section ul li a {
+	color: #e1a05a;
+	text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+	text-decoration: underline;
+}
+
+.footer-bottom {
+	text-align: center;
+	padding-top: 10px;
+	font-size: 14px;
+	color: #f5f5f5;
+	border-top: 1px solid #e1a05a;
+	margin-top: 20px;
+}
+
+/* Ajustes para dispositivos menores */
+@media screen and (max-width: 768px) {
+	.overlay h2 {
+		font-size: 36px;
+	}
+
+	.overlay p {
+		font-size: 18px;
+	}
+}

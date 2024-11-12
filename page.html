@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expresso Puro</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div id="logo">
+      <img src="./estilo/imagens/logo-new.png" alt="Logo Expresso Puro">
+    </div>
+
+    <!-- Navegação -->
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#curiosidades">Curiosidades</a></li>
+        <li><a href="#maquinas">Máquinas</a></li>
+        <li><a href="#receitas">Receitas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção com imagem de fundo e frases no topo -->
+  <section id="inicio">
+    <div class="overlay">
+      <h2><span>Levante seu Dia</span></h2>
+      <h2>Com nossas Receitas!</h2>
+      <p>
+        Aprecie cada gole e sinta a energia renovada, enquanto descobre os benefícios que o café pode trazer para o seu
+        bem-estar.
+      </p>
+    </div>
+  </section>
+
+  <!-- Grade de conteúdo -->
+  <section id="curiosidades">
+    <h1 class="title">Curiosidades</h1>
+    <div class="card-container">
+
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="card-banner"><img src="./estilo/imagens/grade-cafe.png" alt="Imagem Café"></div>
+        <details onclick="toggleDetails(this)">
+          <summary>Grãos vs. Moído: Qual é a Melhor Opção?</summary>
+          <p>Para aqueles que buscam praticidade, o café moído pode ser a escolha ideal.
+            Ele é fácil de preparar e está disponível em diversas opções no mercado,
+            permitindo que você desfrute de uma boa xícara de café sem muito esforço.
+            No entanto, é importante considerar que o café moído pode perder frescor e aroma rapidamente após a abertura
+            do pacote,
+            o que pode comprometer a qualidade da bebida.</p>
+        </details>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="card-banner"><img src="./estilo/imagens/grade-dois.png" alt="Imagem Café"></div>
+        <details onclick="toggleDetails(this)">
+          <summary>Por que alguns são mais doces que outros?</summary>
+          <p>A doçura natural do café é um dos aspectos mais fascinantes e que mais influenciam na experiência de
+            degustação dessa bebida tão apreciada.
+            Ao longo deste artigo, exploramos os diferentes fatores que contribuem para a presença de doçura no café,
+            desde as variedades e métodos de cultivo, até os processos de torra e preparo.</p>
+        </details>
+      </div><br>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="card-banner"><img src="./estilo/imagens/grade-tres.png" alt="Imagem Café"></div>
+        <details onclick="toggleDetails(this)">
+          <summary>Em relação a saúde, café faz bem ou mal?</summary>
+          <p>O café é uma das bebidas mais consumidas no mundo, sendo parte essencial da rotina de milhões de pessoas.
+            No entanto, a relação entre o café e a saúde é um tema que gera muita polêmica. Enquanto alguns estudos
+            apontam
+            diversos benefícios do consumo de café, como a melhora na concentração e a prevenção de doenças, outros
+            alertam para os possíveis malefícios da cafeína, como insônia e ansiedade.</p>
+        </details>
+      </div>
+
+      <!-- Novos cards abaixo -->
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="card-banner"><img src="./estilo/imagens/grade-quatro.png" alt="Imagem Café"></div>
+        <details onclick="toggleDetails(this)">
+          <summary>Explorando os efeitos do café na Memória</summary>
+          <p>Estudos mostram que o café pode ajudar a melhorar a memória de curto prazo e aumentar a capacidade de
+            atenção, tornando-o um excelente aliado para atividades mentais.</p>
+        </details>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <div class="card-banner"><img src="./estilo/imagens/grade-cinco.png" alt="Imagem Café"></div>
+        <details onclick="toggleDetails(this)">
+          <summary>Efeitos sobre o descanso noturno</summary>
+          <p>Consumir café no fim da tarde pode interferir no sono, pois a cafeína estimula o sistema nervoso central. A
+            escolha dos horários de consumo é essencial para evitar insônia.</p>
+        </details>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card">
+        <div class="card-banner"><img src="./estilo/imagens/grade-seis.png" alt="Imagem Café"></div>
+        <details onclick="toggleDetails(this)">
+          <summary>Bebidas Alternativas ao Café Tradicional</summary>
+          <p>Chás, infusões e até mesmo café descafeinado são ótimas alternativas para aqueles que desejam uma bebida
+            quente sem o efeito estimulante da cafeína.</p>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Grade de conteúdo -->
+  <section id="maquinas">
+
+    <h1 class="title">Máquinas</h1>
+
+    <div class="card-container">
+      <!-- 1. Cafeteira Italiana (Moka) -->
+      <div class="card" onclick="toggleMaquina(event, this)">
+        <img src="./estilo/imagens/cafeteira-italiana.jpg" alt="Cafeteira Italiana">
+        <div class="card-content">
+          <h3>Cafeteira Italiana (Moka)</h3>
+          <p>Uma cafeteira de pressão que produz um café forte e encorpado.</p>
+        </div>
+        <div class="card-details">
+          <button class="close-btn" onclick="toggleMaquina(event, this)">✖</button>
+          <p><strong>Descrição:</strong> Funciona com pressão de vapor, onde a água, ao ferver, passa pelo café em
+            um filtro e sobe para a parte superior da cafeteira.</p>
+          <p><strong>Prós:</strong>
+          <ul>
+            <li>Café encorpado e saboroso</li>
+            <li>Simples de usar</li>
+            <li>Baixo custo</li>
+          </ul>
+          </p>
+          <p><strong>Contras:</strong>
+          <ul>
+            <li>Exige atenção para não queimar o café</li>
+            <li>Demora um pouco para aquecer</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <!-- 2. Cafeteira de Espresso -->
+      <div class="card" onclick="toggleMaquina(event, this)">
+        <img src="./estilo/imagens/cafeteira-espresso.png" alt="Cafeteira Espresso">
+        <div class="card-content">
+          <h3>Cafeteira de Espresso</h3>
+          <p>Produz um café concentrado e cremoso, ideal para quem gosta de espresso.</p>
+        </div>
+        <div class="card-details">
+          <button class="close-btn" onclick="toggleMaquina(event, this)">✖</button>
+          <p><strong>Descrição:</strong> Utiliza alta pressão para extrair o café rapidamente, resultando em um
+            café intenso e aromático.</p>
+          <p><strong>Prós:</strong>
+          <ul>
+            <li>Extrai rapidamente o café</li>
+            <li>Produz um café intenso e aromático</li>
+            <li>Permite preparar bebidas variadas</li>
+          </ul>
+          </p>
+          <p><strong>Contras:</strong>
+          <ul>
+            <li>Custo elevado da máquina</li>
+            <li>Consumo de energia mais alto</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <!-- 3. Prensa Francesa (French Press) -->
+      <div class="card" onclick="toggleMaquina(event, this)">
+        <img src="./estilo/imagens/cafeteira-francesa.png" alt="Prensa Francesa">
+        <div class="card-content">
+          <h3>Prensa Francesa (French Press)</h3>
+          <p>Método de imersão que resulta em um café encorpado e aromático.</p>
+        </div>
+        <div class="card-details">
+          <button class="close-btn" onclick="toggleMaquina(event, this)">✖</button>
+          <p><strong>Descrição:</strong> O café fica imerso na água quente por alguns minutos, resultando em uma
+            bebida rica e com mais óleos naturais.</p>
+          <p><strong>Prós:</strong>
+          <ul>
+            <li>Fácil de usar e limpar</li>
+            <li>Café encorpado e aromático</li>
+            <li>Não precisa de filtro de papel</li>
+          </ul>
+          </p>
+          <p><strong>Contras:</strong>
+          <ul>
+            <li>Requer atenção ao tempo de preparo</li>
+            <li>Resíduos de café podem ficar na bebida</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <!-- 4. Cafeteira Filtrada (Drip Coffee) -->
+      <div class="card" onclick="toggleMaquina(event, this)">
+        <img src="./estilo/imagens/cafeteira-filtrada.png" alt="Cafeteira Filtrada">
+        <div class="card-content">
+          <h3>Cafeteira Filtrada (Drip Coffee)</h3>
+          <p>Usa o método de filtragem para preparar um café suave e limpo.</p>
+        </div>
+        <div class="card-details">
+          <button class="close-btn" onclick="toggleMaquina(event, this)">✖</button>
+          <p><strong>Descrição:</strong> A água quente é despejada sobre o pó de café em um filtro, e a bebida passa por
+            um processo de extração gradual, resultando em um café leve e suave.</p>
+          <p><strong>Prós:</strong>
+          <ul>
+            <li>Simples de usar</li>
+            <li>Produz um café suave e de bom sabor</li>
+            <li>Ideal para fazer várias xícaras de uma vez</li>
+          </ul>
+          </p>
+          <p><strong>Contras:</strong>
+          <ul>
+            <li>Leva mais tempo para preparar</li>
+            <li>Requer o uso de filtros de papel ou permanentes</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <!-- 5. Cafeteira Aeropress -->
+      <div class="card" onclick="toggleMaquina(event, this)">
+        <img src="./estilo/imagens/cafeteira-aeropress.png" alt="Cafeteira Aeropress">
+        <div class="card-content">
+          <h3>Cafeteira Aeropress</h3>
+          <p>Uma cafeteira portátil que oferece um café forte e encorpado, com uma extração rápida.</p>
+        </div>
+        <div class="card-details">
+          <button class="close-btn" onclick="toggleMaquina(event, this)">✖</button>
+          <p><strong>Descrição:</strong> A Aeropress utiliza pressão manual para forçar a água quente através do pó de
+            café, resultando em uma bebida rica e suave, pronta em apenas alguns minutos.</p>
+          <p><strong>Prós:</strong>
+          <ul>
+            <li>Fácil de usar e limpar</li>
+            <li>Compacta e portátil</li>
+            <li>Produz um café com sabor rico e encorpado</li>
+            <li>Rápida: preparação em poucos minutos</li>
+          </ul>
+          </p>
+          <p><strong>Contras:</strong>
+          <ul>
+            <li>Exige o uso de pressão manual</li>
+            <li>Não é ideal para grandes quantidades de café</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <!-- 6. Cafeteira de Sifão (Syphon) -->
+      <div class="card" onclick="toggleMaquina(event, this)">
+        <img src="./estilo/imagens/cafeteira-sifao.png" alt="Cafeteira de Sifão">
+        <div class="card-content">
+          <h3>Cafeteira de Sifão (Syphon)</h3>
+          <p>Uma cafeteira que utiliza pressão de vapor e vácuo para preparar o café, oferecendo uma experiência única.
+          </p>
+        </div>
+        <div class="card-details">
+          <button class="close-btn" onclick="toggleMaquina(event, this)">✖</button>
+          <p><strong>Descrição:</strong> A cafeteira de sifão usa a pressão do vapor e vácuo para extrair os sabores do
+            café. É um processo visualmente impressionante e resulta em um café muito limpo e complexo.</p>
+          <p><strong>Prós:</strong>
+          <ul>
+            <li>Processo visual interessante</li>
+            <li>Produz um café claro e aromático</li>
+            <li>Extração completa dos sabores</li>
+          </ul>
+          </p>
+          <p><strong>Contras:</strong>
+          <ul>
+            <li>Exige mais tempo e atenção</li>
+            <li>Requer habilidade no uso</li>
+            <li>Geralmente mais caro</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <!-- 7. Cafeteira Elétrica -->
+      <div class="card" onclick="toggleMaquina(event, this)">
+        <img src="./estilo/imagens/cafeteira-eletrica.png" alt="Cafeteira Elétrica">
+        <div class="card-content">
+          <h3>Cafeteira Elétrica</h3>
+          <p>Uma cafeteira automática, ideal para quem deseja praticidade no dia a dia.</p>
+        </div>
+        <div class="card-details">
+          <button class="close-btn" onclick="toggleMaquina(event, this)">✖</button>
+          <p><strong>Descrição:</strong> As cafeteiras elétricas fazem todo o trabalho automaticamente, basta adicionar
+            água e café. Elas oferecem conveniência e rapidez no preparo.</p>
+          <p><strong>Prós:</strong>
+          <ul>
+            <li>Prática e fácil de usar</li>
+            <li>Prepara várias xícaras de café de uma vez</li>
+            <li>Ideal para quem tem pouco tempo</li>
+          </ul>
+          </p>
+          <p><strong>Contras:</strong>
+          <ul>
+            <li>O café pode ser menos intenso</li>
+            <li>Pode ser difícil de limpar</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <!-- 8. Cafeteira de Cápsulas -->
+      <div class="card" onclick="toggleMaquina(event, this)">
+        <img src="./estilo/imagens/cafeteira_capsulas.png" alt="Cafeteira de Cápsulas">
+        <div class="card-content">
+          <h3>Cafeteira de Cápsulas</h3>
+          <p>Máquinas que usam cápsulas de café para preparar bebidas de forma rápida e prática.</p>
+        </div>
+        <div class="card-details">
+          <button class="close-btn" onclick="toggleMaquina(event, this)">✖</button>
+          <p><strong>Descrição:</strong> As cafeteiras de cápsulas usam cápsulas de café preenchedas para preparar café
+            rapidamente, com menos sujeira e mais conveniência.</p>
+          <p><strong>Prós:</strong>
+          <ul>
+            <li>Prática e rápida</li>
+            <li>Variedade de cápsulas e sabores</li>
+            <li>Sem sujeira ou necessidade de moer o café</li>
+          </ul>
+          </p>
+          <p><strong>Contras:</strong>
+          <ul>
+            <li>Custo elevado das cápsulas</li>
+            <li>Impacto ambiental devido ao descarte das cápsulas</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <!-- 9. Cafeteira Cold Brew -->
+      <div class="card" onclick="toggleMaquina(event, this)">
+        <img src="./estilo/imagens/cafeteira-cold-brew.png" alt="Cafeteira Cold Brew">
+        <div class="card-content">
+          <h3>Cafeteira Cold Brew</h3>
+          <p>Prepara café frio por infusão lenta, criando uma bebida suave e pouco ácida.</p>
+        </div>
+        <div class="card-details">
+          <button class="close-btn" onclick="toggleMaquina(event, this)">✖</button>
+          <p><strong>Descrição:</strong> A Cold Brew é preparada com café moído e água fria, permitindo uma extração
+            suave durante várias horas (geralmente de 12 a 24 horas).</p>
+          <p><strong>Prós:</strong>
+          <ul>
+            <li>Café suave e com menos acidez</li>
+            <li>Ideal para dias quentes</li>
+            <li>Pode ser armazenado por vários dias</li>
+          </ul>
+          </p>
+          <p><strong>Contras:</strong>
+          <ul>
+            <li>Demora para ser preparado</li>
+            <li>Requer planejamento antecipado</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Grade de conteúdo -->
+  <section id="receitas">
+    <div style="text-align: center;">
+      <h1 class="title">Receitas</h1>
+      <div class="card-container">
+        <img src="./estilo/imagens/Guia para fazer café para todos os gostos.jpg" alt="Receitas">
+      </div>
+    </div>
+  </section>
+
+  <section id="cafeterias">
+    <div class="box">
+      <h1>Melhores Cafeterias no Rio de Janeiro</h1>
+      <p>
+        O Rio de Janeiro, conhecido por sua energia vibrante e cultura rica, também oferece uma cena de
+        cafeterias próspera, com opções para todos os gostos, desde espaços tradicionais até ambientes inovadores. Aqui, destacamos algumas das melhores cafeterias
+        da cidade,
+        cada uma com características únicas e que valem a visita para os amantes do café.
+      </p>
+
+      <h3 style="color: #e1a05a;"> Destacam-se algumas das melhores:</h3>
+      <ul>
+        <li>Curto Café (Centro): Sistema de doações, com café de pequenos produtores brasileiros e ambiente
+          descontraído.</li>
+        <li>Café Secreto (Botafogo): Espaço intimista, com grãos de diversas regiões e métodos variados.</li>
+        <li>Café Hum (Ipanema): Ambiente sofisticado, com baristas especializados e sobremesas artesanais.
+        </li>
+        <li>Fazenda Paradiso Café (Leblon): Cafés diretamente de uma fazenda, com foco em métodos como chemex
+          e prensa francesa.</li>
+      </ul>
+
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.9078851923996!2d-43.17782082504552!3d-22.904227337778856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fc799613081%3A0xdfa60a0300403169!2sCurto%20Caf%C3%A9!5e1!3m2!1spt-BR!2sbr!4v1730848120015!5m2!1spt-BR!2sbr"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>Expresso Puro</h3>
+        <p>
+          Apreciamos cada grão e cada gole. Junte-se a nós para explorar o universo do café e aproveite nossas
+          receitas especiais.
+        </p>
+      </div>
+
+      <div class="footer-section links">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#curiosidades">Curiosidades</a></li>
+          <li><a href="#cafeterias">Cafeterias</a></li>
+          <li><a href="#receitas">Receitas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section contact">
+        <h4>Contato</h4>
+        <p>Email: contato@expressopuro.com</p>
+        <p>Telefone: (21) 1234-5678</p>
+        <p>Endereço: Queimados, RJ</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 Expresso Puro | Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
